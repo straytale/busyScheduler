@@ -42,7 +42,7 @@ typedef struct
     U32 start_timer;
 } Scheduler;
 
-static inline U32 current_time(void)
+static inline U64 current_time(void)
 {
     return time(NULL);
 }
@@ -60,7 +60,7 @@ static inline void info_log(char *msg)
     struct tm *tm_info;
     char buffer[20];
 
-    U32 timestamp = current_time();
+    U64 timestamp = current_time();
     tm_info = localtime((time_t *)&timestamp);
 
     strftime(buffer, sizeof(buffer), "20%y-%m-%d %H:%M.%S", tm_info);
