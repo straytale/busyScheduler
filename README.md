@@ -53,7 +53,7 @@ gcc -o busyScheduler     sche.c disp.c taskA.c taskB.c taskC.c     -I.
 ---
 
 ## 📌 Notes
-- Designed for Windows, but portable to Linux with minor changes.
+- Designed for Windows, but portable to Linux.
 - This is a tick-based simulation with no use of real threads or preemption.
 - Designed to simulate embedded-style scheduling in a basic environment.
 - Useful as a teaching tool for real-time scheduling principles.
